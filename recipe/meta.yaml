@@ -14,8 +14,6 @@ build:
 
 requirements:
   run:
-    - __linux  # [linux]
-    - __win    # [win]
     - cuda-compiler {{ version }}
     - cuda-libraries {{ version }}
     - cuda-libraries-dev {{ version }}
