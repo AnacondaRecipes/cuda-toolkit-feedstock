@@ -11,10 +11,12 @@ source:
 build:
   number: 0
   noarch: generic
-  skip: true # [osx or (linux and s390x)]
+  skip: true # [osx]
 
 requirements:
   run:
+    - __linux  # [linux]
+    - __win    # [win]
     - cuda-compiler {{ version }}
     - cuda-libraries {{ version }}
     - cuda-libraries-dev {{ version }}
