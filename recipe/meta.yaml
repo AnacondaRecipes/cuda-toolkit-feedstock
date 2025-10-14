@@ -1,4 +1,4 @@
-{% set version = "12.4.1" %}
+{% set version = "12.8.1" %}
 
 package:
   name: cuda-toolkit
@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: generic
-  skip: true # [osx or (linux and s390x)]
+  skip: true # [osx]
 
 requirements:
   run:
@@ -20,7 +20,7 @@ requirements:
     - cuda-compiler {{ version }}
     - cuda-libraries {{ version }}
     - cuda-libraries-dev {{ version }}
-    - cuda-nvml-dev 12.4.127
+    - cuda-nvml-dev 12.8.90
     - cuda-tools {{ version }}
 
 test:
